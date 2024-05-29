@@ -12,17 +12,17 @@ const integrantes = [
   { id: 3, nombre: "Francisco", apellido: "Caero" },
   { id: 4, nombre: "Saúl", apellido: "Bautista" }
 ];
-
+//-------------------------------------------------------------------------------------------------------------------------------
 // Ruta para presentar la información del grupo de trabajo 
 app.get('/', (req, res) => {
   res.send("WELCOME - Grupo N° 2");
 });
-
+//----------------------------------------------------------------------------------------------------------------------
 // Ruta para presentar la información de los integrantes del grupo
 app.get('/integrantes', (req, res) => {
   res.json(integrantes);
 });
-
+//-------------------------------------------------------------------------------------------------------------------
 // Ruta para presentar la información de un integrante específico del grupo
 app.get('/integrantes/:id', (req, res) => {
   const integrante = integrantes.find(i => i.id === parseInt(req.params.id));
@@ -33,9 +33,7 @@ app.get('/integrantes/:id', (req, res) => {
   }
 });
 
-
-
-  
+//----------------------------------------------------------------------------------------------------------------------------------------------
 // Lista de productos con sus nombres e imágenes
 const productos = [
   { nombre: "Lácteos", imagen: "/imagenes/img2.jpg" },
