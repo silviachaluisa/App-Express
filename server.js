@@ -10,7 +10,7 @@ const integrantes = [
   { id: 4, nombre: "Saúl", apellido: "Bautista" }
 ];
 
-// Ruta para presentar la información del grupo de trabajo
+// Ruta para presentar la información del grupo de trabajo 
 app.get('/', (req, res) => {
   res.send("WELCOME - Grupo N° 2");
 });
